@@ -1,0 +1,6 @@
+<!--pages/mine/mine.wxml-->
+<view class="container theme-{{mainStyle}}">
+  <van-button class="primary-btn"  bind:click="onClick">
+    默认按钮
+  </van-button>
+</view>

@@ -1,0 +1,14 @@
+{
+  "name": "miniprogram-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "lijing",
+  "license": "ISC",
+  "dependencies": {
+    "@vant/weapp": "^1.4.4"
+  }
+}

@@ -1,0 +1,6 @@
+/* pages/mine/mine.wxss */
+
+.primary-btn .van-button--default{
+  background-color: var(--btn-text-color);
+  color: white;
+}

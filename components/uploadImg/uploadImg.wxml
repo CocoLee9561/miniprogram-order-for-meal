@@ -1,0 +1,7 @@
+<!--components/uploadImg/uploadImg.wxml-->
+<view>
+  <van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" />
+  <slot>
+    <text>this is slot</text>
+  </slot>
+</view>

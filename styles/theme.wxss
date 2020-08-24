@@ -1,0 +1,6 @@
+@import "./theme-pink.wxss";
+@import "./theme-red.wxss";
+.img-styles{
+  --img-in-list-height: 200rpx;
+  --img-single-height: 300rpx;
+}

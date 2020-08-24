@@ -1,0 +1,10 @@
+.theme-pink{
+  --btn-text-color: pink;
+  --btn-bg-color: white;
+  --btn-font-size: 12px;
+
+  /* vant */
+  --button-border-radius: 10px;
+  --button-default-color: var(--btn-text-color);
+  --button-default-border-color: var(--btn-text-color);
+}
