@@ -1,1 +1,15 @@
 /* components/listItem.wxss */
+.food-item{
+  margin: 10px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  min-height: 25px;
+}
+.image{
+  width: 30%;
+}
+image{
+  width: 100%;
+  height: auto;
+}

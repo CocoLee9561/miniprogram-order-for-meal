@@ -1,24 +1,20 @@
 //app.js
+import Toast from '@vant/weapp/toast/toast'
 App({
-  onLaunch: function () {
-    // 展示本地存储能力
-    var logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
-
-    var style = wx.getStorageSync('themeType') || 'pink'
-    this.globalData.themeType = style
-    wx.setStorageSync('themeType', style) 
-
+  wxLogin() {
     // 登录
     wx.login({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
       }
     })
+  },
+
+  wxGetUserInfo() {    
     // 获取用户信息
     wx.getSetting({
       success: res => {
+        console.log(res)
         if (res.authSetting['scope.userInfo']) {
           // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
           wx.getUserInfo({
@@ -36,9 +32,30 @@ App({
         }
       }
     })
+
+  },
+
+  onLaunch: function () {
+    // 展示本地存储能力
+    var logs = wx.getStorageSync('logs') || []
+    logs.unshift(Date.now())
+    wx.setStorageSync('logs', logs)
+
+    var style = wx.getStorageSync('themeType') || 'pink'
+    this.globalData.themeType = style
+    wx.setStorageSync('themeType', style) 
+    this.wxLogin()
+    this.wxGetUserInfo()
   },
   globalData: {
     userInfo: null,
-    themeType: "pink",
-  }
+    themeType: "pink"
+  },
+  commonFunc: {
+    toast:  function(msg) {    
+      console.log('toast msg: ',msg)  
+      Toast(msg || '我是提示文案，建议不超过十五字~');
+    }
+  },
+  commonRequest() {}
 })

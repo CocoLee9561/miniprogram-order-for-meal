@@ -5,16 +5,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-    buttonStyle: `
-    --button-border-radius: 10px;
-    --button-default-color: green;
-    `,
-    background: ['demo-text-1', 'demo-text-2', 'demo-text-3'],
-    indicatorDots: true,
-    vertical: false,
-    autoplay: false,
-    interval: 2000,
-    duration: 500,
     goodList: [
       {
         title: '肉酱面套餐',
@@ -59,24 +49,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    setTimeout(() => {
-      this.setData({
-        buttonStyle: `
-          --button-border-radius: 2px;
-          --button-default-color: pink;
-        `,
-      });
-    }, 2000);
   },
-  onClick() {
-    Toast('我是提示文案，建议不超过十五字~');
-  },
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    // Toast('hello world')
   },
 
   /**

@@ -22,6 +22,7 @@ Page({
     this.setData({
       mainStyle: wx.getStorageSync('themeType')
     })
+    this.wxGetUserInfo()
 
   },
 

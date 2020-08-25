@@ -7,8 +7,12 @@
   right: 0;
   background-color: #eee;
 }
+.image{
+  width: 30%;
+}
 image{
   width: 100%;
+  height: auto;
 }
 .swiper-item {
   width: 100%;
@@ -42,6 +46,8 @@ image{
   margin: 10px;
   background-color: white;
   border-radius: 5px;
+  display: flex;
+  min-height: 25px;
 }
 
 .good-bought{
