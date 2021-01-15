@@ -1,0 +1,76 @@
+{
+	"pages": [{
+		"path": "pages/shop/index",
+		"style": {
+			"navigationBarTitleText": "店铺"
+		}
+	},{
+		"path": "pages/catalog/index",
+		"style": {
+			"navigationBarTitleText": "分类"
+		}
+	},{
+		"path": "pages/shopcar/index",
+		"style": {
+			"navigationBarTitleText": "购物车"
+		}
+	},{
+		"path": "pages/mine/index",
+		"style": {
+			"navigationBarTitleText": "我的"
+		}
+	},{
+		"path" : "pages/components/search-box/index",
+		"style" :                                                                                    
+		{
+			"navigationBarTitleText": "",
+			"enablePullDownRefresh": false
+		}		
+	}
+	,{
+		"path" : "pages/order/order-list/order-list",
+		"style" :                                                                                    
+		{
+			"navigationBarTitleText": "",
+			"enablePullDownRefresh": false
+		}		
+	}
+	,{
+		"path" : "pages/order/order-detail/order-detail",
+		"style" :                                                                                    
+		{
+			"navigationBarTitleText": "",
+			"enablePullDownRefresh": false
+		}		
+	}
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#007AFF",
+		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"height": "50px",
+		"fontSize": "10px",
+		"iconWidth": "24px",
+		"spacing": "3px",
+		"list": [{
+			"pagePath": "pages/shop/index",
+			"text": "店铺"
+		}, {
+			"pagePath": "pages/catalog/index",
+			"text": "分类"
+		}, {
+			"pagePath": "pages/shopcar/index",
+			"text": "购物车"
+		}, {
+			"pagePath": "pages/mine/index",
+			"text": "我的"
+		}]
+	}
+}
